@@ -1,0 +1,39 @@
+{
+  "name": "@neumatter/monetary-value",
+  "version": "1.0.0",
+  "description": "For mathematically accurate monetary calculations in JavaScript and TypeScript.",
+  "keywords": [
+    "typescript",
+    "ts",
+    "js",
+    "esm",
+    "es6",
+    "money"
+  ],
+  "license": "MIT",
+  "author": "Cal Young <cal@neumatter.dev>",
+  "repository": "Clyng57/monetary-value",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "test": "tsswc && node --loader=tsswc/loader.js ./test/index.ts",
+    "build": "tsswc --dts",
+    "lint": "ts-standard \"src/**/*.{ts,tsx,js,jsx}\"",
+    "format": "ts-standard --fix \"src/**/*.{ts,tsx,js,jsx}\"",
+    "clean": "rm -rf node_modules && rm -rf dist && rm -rf .swc"
+  },
+  "devDependencies": {
+    "@neumatter/slot-map": "^1.0.2",
+    "@neumatter/swc-plugin-add-ext": "^1.0.6",
+    "@types/node": "^20.8.8",
+    "tsswc": "^1.0.7"
+  },
+  "bundledDependencies": [],
+  "publishConfig": {
+    "access": "public"
+  }
+}

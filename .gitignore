@@ -1,0 +1,78 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+node_modules
+.pnp
+.pnp.js
+
+# testing
+coverage
+*.lcov
+.nyc_output
+
+# next.js
+.next/
+out/
+.build/
+
+# misc
+.DS_Store
+*.pem
+.AppleDouble
+.LSOverride
+
+# debug
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# local env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# turbo
+.turbo
+
+# vercel
+.vercel
+
+# testing
+test
+.vscode-test
+
+# caches
+*.tsbuildinfo
+.npm
+.eslintcache
+.stylelintcache
+.cache
+.parcel-cache
+
+# dist
+dist/
+.dist/
+
+# swc
+.swc-cache
+.swc
+
+# dropbox
+.dropbox
+.dropbox.attr
+.dropbox.cache
+
+# windows cache
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+
+# dump
+*.stackdump
